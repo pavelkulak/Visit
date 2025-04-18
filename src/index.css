@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Blueprint';
+    src: url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-blueprint-900;
+    font-family: 'Courier New', monospace;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-blueprint-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-blueprint-700 border-2 border-blueprint-900 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-blueprint-600;
+  }
+}
+
+@layer components {
+  .font-blueprint {
+    font-family: 'Share Tech Mono', 'Courier New', monospace;
+  }
+
+  .blueprint-grid {
+    background-image: 
+      linear-gradient(rgba(51, 92, 140, 0.2) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(51, 92, 140, 0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0;
+    z-index: -1;
+  }
+
+  .dark-theme {
+    --blueprint-100: #b6c5db;
+    --blueprint-200: #8da4c5;
+    --blueprint-300: #6487b0;
+    --blueprint-400: #4c6f97;
+    --blueprint-500: #3a567a;
+    --blueprint-600: #2a405e;
+    --blueprint-700: #1e2e45;
+    --blueprint-800: #13202f;
+    --blueprint-900: #0a121b;
+  }
+
+  .light-theme {
+    --blueprint-900: #edf2fa;
+    --blueprint-800: #d5e0f2;
+    --blueprint-700: #b6c5db;
+    --blueprint-600: #8da4c5;
+    --blueprint-500: #6487b0;
+    --blueprint-400: #4c6f97;
+    --blueprint-300: #3a567a;
+    --blueprint-200: #2a405e;
+    --blueprint-100: #13202f;
+  }
+
+  /* For dark theme (default) */
+  .dark-theme .blueprint-grid {
+    background-image: 
+      linear-gradient(rgba(51, 92, 140, 0.2) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(51, 92, 140, 0.2) 1px, transparent 1px);
+  }
+
+  /* For light theme */
+  .light-theme .blueprint-grid {
+    background-image: 
+      linear-gradient(rgba(30, 55, 90, 0.15) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(30, 55, 90, 0.15) 1px, transparent 1px);
+  }
+}
