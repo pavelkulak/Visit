@@ -4,8 +4,8 @@
 
 @layer base {
   @font-face {
-    font-family: 'Blueprint';
-    src: url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    font-family: "Blueprint";
+    src: url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
     font-weight: normal;
     font-style: normal;
   }
@@ -16,7 +16,7 @@
 
   body {
     @apply bg-blueprint-900;
-    font-family: 'Courier New', monospace;
+    font-family: "Courier New", monospace;
   }
 
   /* Custom Scrollbar */
@@ -39,12 +39,14 @@
 
 @layer components {
   .font-blueprint {
-    font-family: 'Share Tech Mono', 'Courier New', monospace;
+    font-family: "Share Tech Mono", "Courier New", monospace;
   }
 
   .blueprint-grid {
-    background-image: 
-      linear-gradient(rgba(51, 92, 140, 0.2) 1px, transparent 1px),
+    background-image: linear-gradient(
+        rgba(51, 92, 140, 0.2) 1px,
+        transparent 1px
+      ),
       linear-gradient(90deg, rgba(51, 92, 140, 0.2) 1px, transparent 1px);
     background-size: 20px 20px;
     background-position: 0 0;
@@ -64,9 +66,9 @@
   }
 
   .light-theme {
-    --blueprint-900: #edf2fa;
-    --blueprint-800: #d5e0f2;
-    --blueprint-700: #b6c5db;
+    --blueprint-900: #c9ddf0;
+    --blueprint-800: #b2cbe5;
+    --blueprint-700: #9ab8d5;
     --blueprint-600: #8da4c5;
     --blueprint-500: #6487b0;
     --blueprint-400: #4c6f97;
@@ -77,15 +79,19 @@
 
   /* For dark theme (default) */
   .dark-theme .blueprint-grid {
-    background-image: 
-      linear-gradient(rgba(51, 92, 140, 0.2) 1px, transparent 1px),
+    background-image: linear-gradient(
+        rgba(51, 92, 140, 0.2) 1px,
+        transparent 1px
+      ),
       linear-gradient(90deg, rgba(51, 92, 140, 0.2) 1px, transparent 1px);
   }
 
   /* For light theme */
   .light-theme .blueprint-grid {
-    background-image: 
-      linear-gradient(rgba(30, 55, 90, 0.15) 1px, transparent 1px),
+    background-image: linear-gradient(
+        rgba(30, 55, 90, 0.15) 1px,
+        transparent 1px
+      ),
       linear-gradient(90deg, rgba(30, 55, 90, 0.15) 1px, transparent 1px);
   }
 }

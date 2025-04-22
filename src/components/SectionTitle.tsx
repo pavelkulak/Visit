@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 interface SectionTitleProps {
   title: string;
@@ -8,7 +8,7 @@ interface SectionTitleProps {
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle }) => {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -19,9 +19,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle }) => {
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-2 text-blueprint-200 font-mono text-sm">
-          {subtitle}
-        </p>
+        <p className="mt-2 text-blueprint-200 font-mono text-sm">{subtitle}</p>
       )}
       <div className="mt-2 mx-auto w-20 h-0.5 bg-blueprint-300"></div>
     </motion.div>

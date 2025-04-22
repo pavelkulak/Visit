@@ -10,8 +10,8 @@ const Contact: React.FC = () => {
       <div className="container px-4 mx-auto">
         <SectionTitle title="Контакты" subtitle="Связаться со мной" />
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <BlueprintCard title="Местоположение" className="h-full">
+        <div className="flex justify-center items-center max-w-md mx-auto">
+          <BlueprintCard title="Местоположение" className="h-full w-full">
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="text-blueprint-300 mr-3 mt-1" size={18} />
@@ -45,10 +45,7 @@ const Contact: React.FC = () => {
                 </div>
               </li>
               <li className="flex items-start">
-                <Send
-                  className="text-blueprint-300 mr-3 mt-1"
-                  size={18}
-                />
+                <Send className="text-blueprint-300 mr-3 mt-1" size={18} />
                 <div>
                   <p className="text-white font-mono">Telegram</p>
                   <a
@@ -62,62 +59,6 @@ const Contact: React.FC = () => {
                 </div>
               </li>
             </ul>
-          </BlueprintCard>
-
-          <BlueprintCard title="Написать сообщение" className="h-full">
-            <form className="space-y-4">
-              <div className="grid grid-cols-1 gap-4">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-blueprint-100 font-mono text-sm mb-1"
-                  >
-                    Имя
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-3 py-2 bg-blueprint-800 border border-blueprint-600 rounded text-white focus:border-blueprint-300 focus:outline-none focus:ring-1 focus:ring-blueprint-300"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-blueprint-100 font-mono text-sm mb-1"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-3 py-2 bg-blueprint-800 border border-blueprint-600 rounded text-white focus:border-blueprint-300 focus:outline-none focus:ring-1 focus:ring-blueprint-300"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-blueprint-100 font-mono text-sm mb-1"
-                  >
-                    Сообщение
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full px-3 py-2 bg-blueprint-800 border border-blueprint-600 rounded text-white focus:border-blueprint-300 focus:outline-none focus:ring-1 focus:ring-blueprint-300"
-                  ></textarea>
-                </div>
-              </div>
-
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                type="button"
-                className="w-full flex justify-center items-center px-4 py-2 bg-blueprint-700 hover:bg-blueprint-600 border border-blueprint-300 rounded text-white font-mono transition-colors"
-              >
-                <Send size={16} className="mr-2" />
-                Отправить сообщение
-              </motion.button>
-            </form>
           </BlueprintCard>
         </div>
       </div>

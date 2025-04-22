@@ -13,7 +13,7 @@ export const projects: Project[] = [
     id: 2,
     title: "To-do List",
     description:
-      "Интерактивное приложение прогноза погоды с красивыми визуализациями.",
+      "Интерактивное приложение дя составления списка задач.",
     stack: ["JavaScript", "React", "CSS3", "Weather API"],
     link: "https://github.com/pavelkulak/to-do",
     web: "https://todudo.netlify.app/"
