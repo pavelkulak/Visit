@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "AllParkings",
     description:
       "Комплексное приложение для поиска и бронирования парковочных мест в городской среде.",
-    stack: ["React", "Redux Toolkit", "TypeScript", "Tailwind CSS"],
+    stack: ["React", "Redux Toolkit", "TypeScript", "Material UI"],
     link: "https://github.com/pavelkulak/AllParkings",
   },
   {
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: "To-do List",
     description:
       "Интерактивное приложение дя составления списка задач.",
-    stack: ["JavaScript", "React", "CSS3", "Weather API"],
+    stack: ["TypeScript", "React"],
     link: "https://github.com/pavelkulak/to-do",
     web: "https://todudo.netlify.app/"
   },
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: "Task Manager",
     description:
       "Минималистичное, но мощное приложение для управления ежедневными задачами и проектами.",
-    stack: ["React", "TypeScript", "LocalStorage"],
+    stack: ["React", "TypeScript"],
     link: "https://github.com/pavelkulak/KanbanDesk",
     web: "https://kanban-desk-pavel-kulakov.vercel.app/"
   },

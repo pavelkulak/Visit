@@ -11,11 +11,11 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle }) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       transition={{ duration: 0.5 }}
       className="mb-10 text-center"
     >
-      <h2 className="text-2xl md:text-3xl font-blueprint font-bold text-white uppercase tracking-widest">
+      <h2 className="text-2xl md:text-3xl font-blueprint font-bold text-blueprint-100 uppercase tracking-widest">
         {title}
       </h2>
       {subtitle && (

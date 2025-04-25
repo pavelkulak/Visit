@@ -1,15 +1,15 @@
-import React from 'react';
-import { ThemeProvider } from './context/ThemeContext';
-import Header from './components/Header';
-import Hero from './sections/Hero';
-import About from './sections/About';
-import Experience from './sections/Experience';
-import Skills from './sections/Skills';
-import Projects from './sections/Projects';
-import Education from './sections/Education';
-import Contact from './sections/Contact';
-import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
+import React from "react";
+import { ThemeProvider } from "./context/ThemeContext";
+import Header from "./components/Header";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Education from "./sections/Education";
+import Contact from "./sections/Contact";
+import Footer from "./components/Footer";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   return (

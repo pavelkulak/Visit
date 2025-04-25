@@ -50,13 +50,13 @@ const Hero: React.FC = () => {
           >
             <a
               href="#projects"
-              className="px-6 py-3 bg-blueprint-700 hover:bg-blueprint-600 border border-blueprint-300 rounded-md text-white font-mono transition-colors"
+              className="px-6 py-3 bg-blueprint-800 hover:bg-blueprint-700 border border-blueprint-600 rounded-md text-white font-mono transition-all duration-300 hover:scale-105"
             >
               Мои проекты
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 bg-transparent hover:bg-blueprint-800/50 border border-blueprint-300 rounded-md text-blueprint-100 hover:text-white font-mono transition-colors"
+              className="px-6 py-3 bg-blueprint-800 hover:bg-blueprint-700 border border-blueprint-600 rounded-md text-white font-mono transition-all duration-300 hover:scale-105"
             >
               Связаться со мной
             </a>
@@ -76,14 +76,7 @@ const Hero: React.FC = () => {
             >
               <Github size={24} />
             </a>
-            <a
-              href="https://linkedin.com/in/pavelkulakov"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blueprint-300 hover:text-white transition-colors"
-            >
-              <Linkedin size={24} />
-            </a>
+
             <a
               href="/resume/resume.html"
               target="_blank"

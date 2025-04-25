@@ -14,7 +14,7 @@ const About: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6 }}
           >
             <BlueprintCard title="Обо мне" className="h-full">

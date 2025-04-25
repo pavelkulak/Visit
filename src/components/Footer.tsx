@@ -9,13 +9,10 @@ const Footer: React.FC = () => {
       <div className="container px-4 mx-auto">
         <div className="flex flex-col md:flex-row justify-center md:justify-between items-center">
           <p className="text-blueprint-300 font-mono text-sm mb-4 md:mb-0">
-            &copy; {currentYear} Павел Кулаков. Все права защищены.
+            &copy; {currentYear} Павел Кулаков.
           </p>
 
-          <p className="text-blueprint-300 font-mono text-sm flex items-center">
-            Сделано с <Heart size={14} className="mx-1 text-blueprint-500" /> в
-            России
-          </p>
+          
         </div>
       </div>
     </footer>

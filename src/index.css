@@ -66,15 +66,15 @@
   }
 
   .light-theme {
-    --blueprint-900: #c9ddf0;
-    --blueprint-800: #b2cbe5;
-    --blueprint-700: #9ab8d5;
-    --blueprint-600: #8da4c5;
-    --blueprint-500: #6487b0;
-    --blueprint-400: #4c6f97;
-    --blueprint-300: #3a567a;
-    --blueprint-200: #2a405e;
-    --blueprint-100: #13202f;
+    --blueprint-900: #0071b8;
+    --blueprint-800: #005fa3;
+    --blueprint-700: #004d8e;
+    --blueprint-600: #003b79;
+    --blueprint-500: #002964;
+    --blueprint-400: #00174f;
+    --blueprint-300: #00053a;
+    --blueprint-200: #ffffff;
+    --blueprint-100: #ffffff;
   }
 
   /* For dark theme (default) */
@@ -89,9 +89,9 @@
   /* For light theme */
   .light-theme .blueprint-grid {
     background-image: linear-gradient(
-        rgba(30, 55, 90, 0.15) 1px,
+        rgba(255, 255, 255, 0.2) 1px,
         transparent 1px
       ),
-      linear-gradient(90deg, rgba(30, 55, 90, 0.15) 1px, transparent 1px);
+      linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
   }
 }

@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 interface SkillBarProps {
   name: string;
@@ -18,7 +18,7 @@ const SkillBar: React.FC<SkillBarProps> = ({ name, level, delay = 0 }) => {
         <motion.div
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 1, delay: delay * 0.1 + 0.3 }}
           className="h-full bg-blueprint-300"
         ></motion.div>
