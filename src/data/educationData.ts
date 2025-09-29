@@ -5,7 +5,7 @@ export const education: Education[] = [
     id: 1,
     institution: "Elbrus Bootcamp",
     degree: "Курс веб-разработки",
-    period: "2024",
+    period: "2023",
     description:
       "Интенсивный 12-недельный курс по full-stack веб-разработке с фокусом на JavaScript, TypeScript, React и Node.js.",
   },
@@ -13,7 +13,7 @@ export const education: Education[] = [
     id: 2,
     institution: "Саратовский Государственный Университет им. Н.Г. Чернышевского",
     degree: "Факультет нано и биомедицинских технологий",
-    period: "2014 - 2018",
+    period: "2011 - 2015",
     description:
       "Изучение основ информатики, структур данных, алгоритмов и принципов программной инженерии.",
   },
